@@ -370,11 +370,10 @@ body._overflow {
 
 
 
-.company_content {
-	
+.company_content {	
 	background-image: url('../img/company-image.jpg');
 	background-repeat: no-repeat;
-	
+	background-position: center top; 
 }
 
 
@@ -479,13 +478,21 @@ body._overflow {
 	padding-bottom: 40px;
 }
 
-.contacts_image-room {
-	padding-left: 180px;
+.contacts_image {
+	display: flex;
+	flex-direction: column;
+	max-width: 1000px;
+	align-items: flex-start;
+	margin: 0 auto;
+	padding-bottom: 20px;
 }
 
 .contacts_image-wash {
-	margin: -35px 400px 0 450px;
+	align-self: flex-end;
+	margin-top: -70px;
 }
+
+
 
 
 .footer {
@@ -500,6 +507,12 @@ body._overflow {
 
 .footer_text {
 	margin: 15px 0;
+}
+
+.map iframe {
+	width: 100%;
+	border: none;
+	height: 400px;
 }
 
 .popup {
